@@ -20,7 +20,8 @@
 
 
 ## Prerequisites :heavy_check_mark:
-:octocat: Tech knowledge: Firebase database, React JS 
+:octocat: Tech knowledge: Firebase database, React JS
+
 :octocat: Tools: Visual studio code 
 
 ## Authors
