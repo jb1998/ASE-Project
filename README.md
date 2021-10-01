@@ -32,7 +32,7 @@
  - Add authors and link with their linkedin/github profiles
 
 
-# Front-End
+# Front-End :fire:
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
