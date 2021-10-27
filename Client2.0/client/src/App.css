@@ -12,6 +12,69 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+.main-design{
+  background-color: #0A1A4F;
+  display: flex;           /* establish flex container */
+  flex-direction: column;  /* make main axis vertical */
+  justify-content: center; /* center items vertically, in this case */
+  align-items: center;     /* center items horizontally, in this case */
+  height: 100vh;
+  size: 5rem;
+  }
+  .card-here2{
+    width: 50%;
+    height: 50%;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    font-size: 4rem;
+    vertical-align: middle;
+    color: white;
+    box-shadow: 0 0 20px 0 rgb(189, 189, 189) !important;
+  }
+ 
+
+@media all and (max-width: 500px) {
+  .mobile_device_480px{display: flex; height: fit-content; background-color: var(--primary-black);}
+  
+ 
+.card-here{
+  width: 15rem;
+  height: 15rem;
+  margin: 5px;
+  text-align: center; 
+  background-image: url("/Users/jatinbindra/Desktop/ASE project/client/src/images/win.jpg");
+  background-position: center;
+  background-repeat: no-repeat; 
+  background-size: cover;
+  box-shadow: 0 0 20px 0 rgb(189, 189, 189) !important;
+}
+
+.card-here2{
+  width: 0%;
+  height: 0%;
+  font-size: 0rem;
+}
+.img
+{
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+  display: block;
+}
+.main-design{
+  background-color: #0A1A4F;
+  display: flex;           /* establish flex container */
+  flex-direction: column;  /* make main axis vertical */
+  justify-content: center; /* center items vertically, in this case */
+  align-items: center;     /* center items horizontally, in this case */
+  height: 100vh;
+  }
+
+
+}
 
 .App-header {
   background-color: #282c34;
@@ -23,6 +86,8 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+
+
 
 .App-link {
   color: #61dafb;
