@@ -37,6 +37,14 @@ const windsorTourLocations = [
         locations: [
             'EPICentre'
         ]
+        },
+      {
+        id: 105,
+        categoryIcon: 'my_location',
+        categoryTitle: 'My Location',
+        locations: [
+            'Current Location'
+        ]
         }
     ]
 
@@ -84,14 +92,14 @@ class WindsorTourPlaces extends Component {
     switch(loc){
     case 'Alumni Hall and Conference Centre':
 
-          if(((Math.abs(lat)-Math.abs(42.302913607048254))>=0 && (Math.abs(lat)-Math.abs(42.302913607048254))<=0.001) || ((Math.abs(lat)-Math.abs(42.302913607048254))<=0 && (Math.abs(lat)-Math.abs(42.302913607048254))>=-(0.001))){
-            if(((Math.abs(long)-Math.abs(-83.06288937320598))>=0 && (Math.abs(long)-Math.abs(-83.06288937320598))<=0.001) || ((Math.abs(long)-Math.abs(-83.06288937320598))<=0 && (Math.abs(long)-Math.abs(-83.06288937320598))>=(-0.001))){
-              window.open("https://ashmi275.github.io/location-based-augumented-reality/alumni.html", "_blank")
-            }
-          }else{
-            window.alert(`You are not at ${loc} location!`);
-          }
-          break;
+      if(((Math.abs(lat)-Math.abs(42.302913607048254))>=0 && (Math.abs(lat)-Math.abs(42.302913607048254))<=0.001) || ((Math.abs(lat)-Math.abs(42.302913607048254))<=0 && (Math.abs(lat)-Math.abs(42.302913607048254))>=-(0.001))){
+        if(((Math.abs(long)-Math.abs(-83.06288937320598))>=0 && (Math.abs(long)-Math.abs(-83.06288937320598))<=0.001) || ((Math.abs(long)-Math.abs(-83.06288937320598))<=0 && (Math.abs(long)-Math.abs(-83.06288937320598))>=(-0.001))){
+          window.open("https://ashmi275.github.io/location-based-augumented-reality/alumni.html", "_blank")
+        }
+      }else{
+        window.alert(`You are not at ${loc} location!`);
+      }
+      break;
 
     case 'Odette School of Business':
 
@@ -167,6 +175,17 @@ class WindsorTourPlaces extends Component {
         }
       }else{
         window.alert(`You are not at ${loc} location!`);
+      }
+      break;
+
+    case 'Current Location':
+
+      if(((Math.abs(lat)-Math.abs(lat))>=0 && (Math.abs(lat)-Math.abs(lat))<=0.001) || ((Math.abs(lat)-Math.abs(lat))<=0 && (Math.abs(lat)-Math.abs(lat))>=-(0.001))){
+        if(((Math.abs(long)-Math.abs(long))>=0 && (Math.abs(long)-Math.abs(long))<=0.001) || ((Math.abs(long)-Math.abs(long))<=0 && (Math.abs(long)-Math.abs(long))>=(-0.001))){
+          window.open("https://ashmi275.github.io/location-based-augumented-reality/currentLocation.html", "_blank")
+        }
+      }else{
+        window.alert(`Cannot find your ${loc} !`);
       }
       break;
 
