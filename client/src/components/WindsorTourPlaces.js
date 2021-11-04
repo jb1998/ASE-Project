@@ -3,15 +3,15 @@ import styled from 'styled-components';
 
 const windsorTourLocations = [
     {
-      id: 1,
-      categoryIcon: 'account_balance',
-      categoryTitle: 'Residence',
-      locations: [
-          'Alumni Hall and Conference Centre'
-      ]
+        id: 101,
+        categoryIcon: 'account_balance',
+        categoryTitle: 'Residence',
+        locations: [
+            'Alumni Hall and Conference Centre'
+        ]
     },
     {
-        id: 2,
+        id: 102,
         categoryIcon: 'school',
         categoryTitle: 'Education',
         locations: [
@@ -20,24 +20,24 @@ const windsorTourLocations = [
             'Dillon Hall',
             'Essex Hall'
         ]         
+    },
+    {
+        id: 103,
+        categoryIcon: 'sentiment_very_satisfied',
+        categoryTitle: 'Recreation',
+        locations: [
+            'St. Denis Athletic & Community Centre',
+            'Turtle Island Walk'
+        ]
       },
       {
-          id: 3,
-          categoryIcon: 'sentiment_very_satisfied',
-          categoryTitle: 'Recreation',
-          locations: [
-              'St. Denis Athletic & Community Centre',
-              'Turtle Island Walk'
-          ]
-        },
-        {
-            id: 4,
-            categoryIcon: 'people',
-            categoryTitle: 'Social',
-            locations: [
-                'EPICentre'
-            ]
-          }
+        id: 104,
+        categoryIcon: 'people',
+        categoryTitle: 'Social',
+        locations: [
+            'EPICentre'
+        ]
+        }
     ]
 
 const PlaceCategory = styled.div`
@@ -100,15 +100,15 @@ class WindsorTourPlaces extends Component {
               <Fragment>
               <PlaceCategory key={id}>
                 <PlaceCategoryIcon> 
-                <i class="small material-icons">{categoryIcon}</i>
+                <i className="small material-icons">{categoryIcon}</i>
                 </PlaceCategoryIcon>        
                 <PlaceCategoryTitle>{categoryTitle}</PlaceCategoryTitle>
             </PlaceCategory>
             {locations.map((loc, index) => {
                 return (
-                    <Locations onClick={this.fireeventepicenter}>
+                    <Locations key={index} onClick={this.fireeventepicenter}>
                         <LocationIcon> 
-                        <i class="small material-icons">location_on</i>
+                        <i className="small material-icons">location_on</i>
                         </LocationIcon>  
                         <LocationTitle>{loc}</LocationTitle>
                     </Locations>

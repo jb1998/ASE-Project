@@ -1,6 +1,7 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import WindsorTourHeader from './WindsorTourHeader';
 import WindsorTourPlaces from './WindsorTourPlaces';
+import Navagation from './Navagation';
 
 class WindsorTour extends Component {
 
@@ -8,8 +9,10 @@ class WindsorTour extends Component {
     super(props);
     this.state = {
       lat: null,
-      long: null 
+      long: null,
+      backButtonClicked: false
     };   
+    this.handleBackButton = this.handleBackButton.bind(this); 
   }
 
   componentDidMount() {
@@ -20,28 +23,32 @@ class WindsorTour extends Component {
               lat: position.coords.latitude,
               long: position.coords.longitude
             });
-
         }, (e) => {
             console.log(e);
         });
     } else {
-        console.log("navigator not supported");
+        console.log("Navigator not supported");
     }
-}
+  }
+
+  handleBackButton(){
+    this.setState({
+      backButtonClicked: true
+    })
+  }
   
 
   render() {
-
-    const {lat, long} = this.state;
-
+    const {lat, long, backButtonClicked} = this.state;
     return (
-
-
-      <div>
-        <WindsorTourHeader />
+      <Fragment>
+        {backButtonClicked ? <Navagation /> :
+        <div>
+        <WindsorTourHeader handleBackButton={this.handleBackButton}/>
         <WindsorTourPlaces lat={lat} long={long}/>
-      </div>
-     
+      </div>  
+        }
+      </Fragment>   
     );
   }
 }

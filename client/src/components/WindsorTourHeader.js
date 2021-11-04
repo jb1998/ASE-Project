@@ -11,12 +11,27 @@ font-size: 28px;
 font-weight: 700;
 text-align: center;
 `
+const HeaderBackButton = styled.div`
+float: left;
+padding: 5px;
+`
 
 class WindsorTourHeader extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {};      
+  }
+
   render() {
+    const {handleBackButton} = this.props;
+
     return (
         <Header>
-            <div>UWindsor Tour</div>
+          <HeaderBackButton onClick={handleBackButton}>
+          <i className="small material-icons">arrow_back</i>
+          </HeaderBackButton>           
+          <div>UWindsor Tour</div>
         </Header>
     );
   }
