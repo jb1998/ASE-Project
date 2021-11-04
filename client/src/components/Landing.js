@@ -16,7 +16,7 @@ class Landing extends Component {
   componentDidMount() {
     setTimeout(() => {
       this.setState({showNavigation:true})
-    }, 5000)
+    }, 2000)
   }
 
   render(){
