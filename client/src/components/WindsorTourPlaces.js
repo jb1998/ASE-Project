@@ -71,9 +71,31 @@ font-weight: 500;
 `
 
 class WindsorTourPlaces extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {};   
+    this.fireeventepicenter = this.fireeventepicenter.bind(this);
+  }
+
+  fireeventepicenter() {
+    console.log((Math.abs(this.props.lat)-Math.abs(42.3111023))); 
+    console.log(Math.abs(this.props.long)-Math.abs(-83.0375344));
+
+    if(((Math.abs(this.props.lat)-Math.abs(42.30456195766808))>=0 && (Math.abs(this.props.lat)-Math.abs(42.30456195766808))<=0.001) || ((Math.abs(this.props.lat)-Math.abs(42.30456195766808))<=0 && (Math.abs(this.props.lat)-Math.abs(42.30456195766808))>=-(0.001))){
+      if(((Math.abs(this.props.long)-Math.abs(-83.0640182020208))>=0 && (Math.abs(this.props.long)-Math.abs(-83.0640182020208))<=0.001) || ((Math.abs(this.props.long)-Math.abs(-83.0640182020208))<=0 && (Math.abs(this.props.long)-Math.abs(-83.0640182020208))>=(-0.001))){
+        window.open("https://ashmi275.github.io/location-based-augumented-reality/index.html", "_blank")
+      }
+    }else{
+      window.alert("You are not at the EPI Center");
+    }
+  }
+  
+  
   render() {
+    const {lat, long} = this.props;
+
     return (
-      <div>
+      <div >
           {windsorTourLocations.map(({id, categoryIcon, categoryTitle, locations}) => (
               <Fragment>
               <PlaceCategory key={id}>
@@ -84,7 +106,7 @@ class WindsorTourPlaces extends Component {
             </PlaceCategory>
             {locations.map((loc, index) => {
                 return (
-                    <Locations>
+                    <Locations onClick={this.fireeventepicenter}>
                         <LocationIcon> 
                         <i class="small material-icons">location_on</i>
                         </LocationIcon>  
