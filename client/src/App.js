@@ -1,9 +1,10 @@
-import WindsorTour from './components/WindsorTour';
+
+import Landing from './components/Landing';
 
 function App() {
   return (
     <div>
-      <WindsorTour />
+      <Landing />
     </div>
   );
 }
