@@ -5,9 +5,9 @@ import SIN from './components/SINheader'
 function App() {
   return (
     <div>
-      {/* <Landing /> */}
-      {/* <GIC></GIC> */}
-      <SIN></SIN>
+     <Landing /> 
+       {/* <GIC></GIC>  */}
+      {/* <SIN></SIN> */}
     </div>
   );
 }
