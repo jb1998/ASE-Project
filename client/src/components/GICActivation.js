@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import GICActivationHeader from './GICActivationHeader';
-import Navagation from './Navagation';
+import StudentTask from './StudentTask';
 import '../App.css';
 
 
@@ -43,7 +43,7 @@ class GICActivation extends Component {
     const {lat, long, backButtonClicked} = this.state;
     return (
       <Fragment>
-        {backButtonClicked ? <Navagation /> :
+        {backButtonClicked ? <StudentTask /> :
         <div>
         <GICActivationHeader handleBackButton={this.handleBackButton}/>
         <div className="gictext">
