@@ -16,7 +16,7 @@ float: left;
 padding: 5px;
 `
 
-class WindsorTourHeader extends Component {
+class GICActivationHeader extends Component {
 
   constructor(props) {
     super(props);
@@ -31,10 +31,10 @@ class WindsorTourHeader extends Component {
           <HeaderBackButton onClick={handleBackButton}>
           <i className="small material-icons">arrow_back</i>
           </HeaderBackButton>           
-          <div>UWindsor Tour</div>
+          <div>GIC Activation</div>
         </Header>
     );
   }
 }
 
-export default WindsorTourHeader;
+export default GICActivationHeader;

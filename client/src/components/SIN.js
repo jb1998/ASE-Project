@@ -1,9 +1,11 @@
 import React, { Component, Fragment } from 'react';
-import WindsorTourHeader from './WindsorTourHeader';
+import SINHeader from './SINheader';
 import WindsorTourPlaces from './WindsorTourPlaces';
 import Navagation from './Navagation';
+import '../App.css';
 
-class WindsorTour extends Component {
+
+class GICActivation extends Component {
 
   constructor(props) {
     super(props);
@@ -44,8 +46,23 @@ class WindsorTour extends Component {
       <Fragment>
         {backButtonClicked ? <Navagation /> :
         <div>
-        <WindsorTourHeader handleBackButton={this.handleBackButton}/>
-        <WindsorTourPlaces lat={lat} long={long}/>
+        <SINHeader handleBackButton={this.handleBackButton}/>
+        <div className="gictext">
+        <ol>
+        <li>Walk in to the nearest service Ontario centre.</li>
+        <li>Carry the following documents for the getting SIN number</li>
+        <ol type="a">
+            <li>Passport</li>
+            <li>Study permit</li>
+        </ol>
+        <li>Provide family and residential details.</li>
+
+</ol>
+            
+  
+        </div>
+       
+       
       </div>  
         }
       </Fragment>   
@@ -53,4 +70,4 @@ class WindsorTour extends Component {
   }
 }
 
-export default WindsorTour;
+export default GICActivation;

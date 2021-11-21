@@ -1,7 +1,6 @@
 
 import '../App.css';
-import Button from 'react-bootstrap/Button';
-import { useState, useReducer, Component } from 'react';
+import { Component } from 'react';
 import Navagation from './Navagation';
 
 
@@ -15,40 +14,31 @@ class Landing extends Component {
 
   componentDidMount() {
     setTimeout(() => {
-      this.setState({showNavigation:true})
+      if(window.innerWidth <=768){
+        this.setState({showNavigation:true})
+      }      
     }, 2000)
   }
 
   render(){
     return(
       <div>
- {
-        this.state.showNavigation? (<Navagation></Navagation>) : (
-          <div className="App">
-       
-       
-          <div className="main-design">
-          
-          <div className="card-here">
-          
+  {
+        this.state.showNavigation? (<Navagation />) : (
+          <div className="App">      
+          <div className="main-design">         
+          <div className="card-here">         
           </div>
           <div className="card-here2">
-              please view in mobile view
+              Please view in mobile view
           </div>
           </div>
-             
-             
-              </div>
+          </div>
         )
-      }
-
-      </div>
-     
-   
+  }
+      </div>   
     )
   }
-  
-
 }
 
 export default Landing;
