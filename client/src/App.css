@@ -59,6 +59,11 @@
   color: white;
   box-shadow: 0 0 20px 0 rgb(189, 189, 189) !important;
 }
+.gictext{
+  size: 5rem;
+  font-size: 1.2rem;
+  
+}
 .card-here-navigation{
   width: 70vw;
   height: 5rem;

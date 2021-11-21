@@ -4,52 +4,56 @@ import { useState } from 'react';
 import search from '../images/search.png';
 import list from '../images/list.png';
 import WindsorTour from './WindsorTour';
+import StudentTask from './StudentTask';
 import { Fragment } from 'react';
 
 function Navagation() {
 
-const [windsortour,setwindsortour] = useState(false);
+    const [windsortour, setwindsortour] = useState(false);
+    const [studentTask, setstudentTask] = useState(false);
 
- const exploreWindsor=()=> {
-    setwindsortour(true);
-  }
+    const exploreWindsor = () => {
+        setwindsortour(true);
+    }
+    const exploreStudentTask = () => {
+        setstudentTask(true);
+    }
 
-    
-  return (
+    return (
 
-    <Fragment>
-        {
-            windsortour? (<WindsorTour />):(
-                <div className="App">
-    
-                <div className="main-design">
-                    <div className="main-heading">
-                    
-                        What brings you to WINSSIST?
+        <Fragment>
+            {(windsortour) ? <WindsorTour /> :
+                studentTask ? (<StudentTask />) : (
+                    <div className="App">
+
+                        <div className="main-design">
+                            <div className="main-heading">
+
+                                What brings you to WINSSIST?
                     </div>
-                    <div className="card-here-navigation" onClick={()=> exploreWindsor ()}>
-                        <div className="left-image">
-                            <img alt="" src={search} style={ {height:'4rem', width:'4rem', margin:'0.5rem', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}}></img>
+                            <div className="card-here-navigation" onClick={() => exploreWindsor()}>
+                                <div className="left-image">
+                                    <img alt="" src={search} style={{ height: '4rem', width: '4rem', margin: '0.5rem', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}></img>
+                                </div>
+                                <div className="right-text">Explore Windsor</div>
+
+                            </div>
+                            <div className="card-here-navigation" onClick={() => exploreStudentTask()}>
+                                <div className="left-image">
+                                    <img alt="" src={list} style={{ height: '4rem', width: '4rem', margin: '0.5rem', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}></img>
+                                </div>
+                                <div className="right-text">Complete Student Tasks</div>
+                            </div>
+
                         </div>
-                        <div className="right-text">Explore Windsor</div>
-                        
+
+
                     </div>
-                    <div className="card-here-navigation">
-                    <div className="left-image">
-                            <img alt="" src={list} style={ {height:'4rem', width:'4rem', margin:'0.5rem', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}}></img>
-                        </div>
-                        <div className="right-text">Complete Student Tasks</div>
-                    </div>
-                   
-                </div>
-           
-           
-            </div>
-            )
-        }
-    </Fragment>
-   
-  );
+                )
+            }
+        </Fragment>
+
+    );
 }
 
 export default Navagation;
