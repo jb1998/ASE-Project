@@ -44,7 +44,7 @@ class GICActivation extends Component {
     const {lat, long, backButtonClicked} = this.state;
     return (
       <Fragment>
-        {backButtonClicked ? <Navagation /> :
+        {backButtonClicked ? <StudentTask /> :
         <div>
         <SINHeader handleBackButton={this.handleBackButton}/>
         <div className="gictext">
