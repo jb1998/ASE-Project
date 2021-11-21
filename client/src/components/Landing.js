@@ -17,7 +17,7 @@ class Landing extends Component {
       if(window.innerWidth <=768){
         this.setState({showNavigation:true})
       }      
-    }, 2000)
+    }, 3000)
   }
 
   render(){

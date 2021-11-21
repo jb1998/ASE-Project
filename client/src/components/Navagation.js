@@ -23,31 +23,25 @@ function Navagation() {
 
         <Fragment>
             {(windsortour) ? <WindsorTour /> :
-                studentTask ? (<StudentTask />) : (
+                (studentTask) ? (<StudentTask />) : (
                     <div className="App">
-
                         <div className="main-design">
                             <div className="main-heading">
-
                                 What brings you to WINSSIST?
-                    </div>
+                            </div>
                             <div className="card-here-navigation" onClick={() => exploreWindsor()}>
                                 <div className="left-image">
                                     <img alt="" src={search} style={{ height: '4rem', width: '4rem', margin: '0.5rem', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}></img>
                                 </div>
-                                <div className="right-text">Explore Windsor</div>
-
+                                <div className="right-text">Explore University Of Windsor</div>
                             </div>
                             <div className="card-here-navigation" onClick={() => exploreStudentTask()}>
                                 <div className="left-image">
                                     <img alt="" src={list} style={{ height: '4rem', width: '4rem', margin: '0.5rem', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}></img>
                                 </div>
-                                <div className="right-text">Complete Student Tasks</div>
+                                <div className="right-text">Student Tasks</div>
                             </div>
-
                         </div>
-
-
                     </div>
                 )
             }

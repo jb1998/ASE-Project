@@ -1,6 +1,5 @@
 import React, { Component, Fragment } from 'react';
 import SINHeader from './SINheader';
-import WindsorTourPlaces from './WindsorTourPlaces';
 import Navagation from './Navagation';
 import '../App.css';
 

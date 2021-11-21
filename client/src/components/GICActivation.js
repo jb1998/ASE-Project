@@ -1,6 +1,5 @@
 import React, { Component, Fragment } from 'react';
 import GICActivationHeader from './GICActivationHeader';
-import WindsorTourPlaces from './WindsorTourPlaces';
 import Navagation from './Navagation';
 import '../App.css';
 
