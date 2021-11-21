@@ -39,7 +39,7 @@ function Navagation() {
                                 <div className="left-image">
                                     <img alt="" src={list} style={{ height: '4rem', width: '4rem', margin: '0.5rem', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}></img>
                                 </div>
-                                <div className="right-text">Student Tasks</div>
+                                <div className="right-text">NewComers to Canada</div>
                             </div>
                         </div>
                     </div>

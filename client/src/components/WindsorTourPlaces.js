@@ -94,10 +94,11 @@ class WindsorTourPlaces extends Component {
 
       if(((Math.abs(lat)-Math.abs(42.302913607048254))>=0 && (Math.abs(lat)-Math.abs(42.302913607048254))<=0.001) || ((Math.abs(lat)-Math.abs(42.302913607048254))<=0 && (Math.abs(lat)-Math.abs(42.302913607048254))>=-(0.001))){
         if(((Math.abs(long)-Math.abs(-83.06288937320598))>=0 && (Math.abs(long)-Math.abs(-83.06288937320598))<=0.001) || ((Math.abs(long)-Math.abs(-83.06288937320598))<=0 && (Math.abs(long)-Math.abs(-83.06288937320598))>=(-0.001))){
+          window.alert("Scan the AR marker with your camera for more information on the location.");
           window.open("https://ashmi275.github.io/location-based-augumented-reality/alumni.html", "_blank")
         }
       }else{
-        window.alert(`You are not at ${loc} location!`);
+        window.alert(`You are not at ${loc} location! Visit ${loc} and scan our AR marker.`);
       }
       break;
 
@@ -105,10 +106,11 @@ class WindsorTourPlaces extends Component {
 
       if(((Math.abs(lat)-Math.abs(42.3051739570509))>=0 && (Math.abs(lat)-Math.abs(42.3051739570509))<=0.001) || ((Math.abs(lat)-Math.abs(42.3051739570509))<=0 && (Math.abs(lat)-Math.abs(42.3051739570509))>=-(0.001))){
         if(((Math.abs(long)-Math.abs(-83.06453655784131))>=0 && (Math.abs(long)-Math.abs(-83.06453655784131))<=0.001) || ((Math.abs(long)-Math.abs(-83.06453655784131))<=0 && (Math.abs(long)-Math.abs(-83.06453655784131))>=(-0.001))){
+          window.alert("Scan the AR marker with your camera for more information on the location.");
           window.open("https://ashmi275.github.io/location-based-augumented-reality/odette.html", "_blank")
         }
       }else{
-        window.alert(`You are not at ${loc} location!`);
+        window.alert(`You are not at ${loc} location! Visit ${loc} and scan our AR marker.`);
       }
       break;
 
@@ -116,10 +118,11 @@ class WindsorTourPlaces extends Component {
 
       if(((Math.abs(lat)-Math.abs(42.30787102632674))>=0 && (Math.abs(lat)-Math.abs(42.30787102632674))<=0.001) || ((Math.abs(lat)-Math.abs(42.30787102632674))<=0 && (Math.abs(lat)-Math.abs(42.30787102632674))>=-(0.001))){
         if(((Math.abs(long)-Math.abs(-83.06783345969251))>=0 && (Math.abs(long)-Math.abs(-83.06783345969251))<=0.001) || ((Math.abs(long)-Math.abs(-83.06783345969251))<=0 && (Math.abs(long)-Math.abs(-83.06783345969251))>=(-0.001))){
+          window.alert("Scan the AR marker with your camera for more information on the location.");
           window.open("https://ashmi275.github.io/location-based-augumented-reality/leddy.html", "_blank")
         }
       }else{
-        window.alert(`You are not at ${loc} location!`);
+        window.alert(`You are not at ${loc} location! Visit ${loc} and scan our AR marker.`);
       }
       break;
 
@@ -127,10 +130,11 @@ class WindsorTourPlaces extends Component {
 
       if(((Math.abs(lat)-Math.abs(42.30649720520779))>=0 && (Math.abs(lat)-Math.abs(42.30649720520779))<=0.001) || ((Math.abs(lat)-Math.abs(42.30649720520779))<=0 && (Math.abs(lat)-Math.abs(42.30649720520779))>=-(0.001))){
         if(((Math.abs(long)-Math.abs(-83.06775508852849))>=0 && (Math.abs(long)-Math.abs(-83.06775508852849))<=0.001) || ((Math.abs(long)-Math.abs(-83.06775508852849))<=0 && (Math.abs(long)-Math.abs(-83.06775508852849))>=(-0.001))){
+          window.alert("Scan the AR marker with your camera for more information on the location.");
           window.open("https://ashmi275.github.io/location-based-augumented-reality/dillon.html", "_blank")
         }
       }else{
-        window.alert(`You are not at ${loc} location!`);
+        window.alert(`You are not at ${loc} location! Visit ${loc} and scan our AR marker.`);
       }
       break;
 
@@ -138,10 +142,11 @@ class WindsorTourPlaces extends Component {
 
       if(((Math.abs(lat)-Math.abs(42.30509546137389))>=0 && (Math.abs(lat)-Math.abs(42.30509546137389))<=0.001) || ((Math.abs(lat)-Math.abs(42.30509546137389))<=0 && (Math.abs(lat)-Math.abs(42.30509546137389))>=-(0.001))){
         if(((Math.abs(long)-Math.abs(-83.06675840202075))>=0 && (Math.abs(long)-Math.abs(-83.06675840202075))<=0.001) || ((Math.abs(long)-Math.abs(-83.06675840202075))<=0 && (Math.abs(long)-Math.abs(-83.06675840202075))>=(-0.001))){
+          window.alert("Scan the AR marker with your camera for more information on the location.");
           window.open("https://ashmi275.github.io/location-based-augumented-reality/essex.html", "_blank")
         }
       }else{
-        window.alert(`You are not at ${loc} location!`);
+        window.alert(`You are not at ${loc} location! Visit ${loc} and scan our AR marker.`);
       }
       break;
 
@@ -149,10 +154,11 @@ class WindsorTourPlaces extends Component {
 
       if(((Math.abs(lat)-Math.abs(42.29924028596501))>=0 && (Math.abs(lat)-Math.abs(42.29924028596501))<=0.001) || ((Math.abs(lat)-Math.abs(42.29924028596501))<=0 && (Math.abs(lat)-Math.abs(42.29924028596501))>=-(0.001))){
         if(((Math.abs(long)-Math.abs(-83.06141230387232))>=0 && (Math.abs(long)-Math.abs(-83.06141230387232))<=0.001) || ((Math.abs(long)-Math.abs(-83.06141230387232))<=0 && (Math.abs(long)-Math.abs(-83.06141230387232))>=(-0.001))){
+          window.alert("Scan the AR marker with your camera for more information on the location.");
           window.open("https://ashmi275.github.io/location-based-augumented-reality/denis.html", "_blank")
         }
       }else{
-        window.alert(`You are not at ${loc} location!`);
+        window.alert(`You are not at ${loc} location! Visit ${loc} and scan our AR marker.`);
       }
       break;
 
@@ -160,10 +166,11 @@ class WindsorTourPlaces extends Component {
 
       if(((Math.abs(lat)-Math.abs(42.302913607048254))>=0 && (Math.abs(lat)-Math.abs(42.302913607048254))<=0.001) || ((Math.abs(lat)-Math.abs(42.302913607048254))<=0 && (Math.abs(lat)-Math.abs(42.302913607048254))>=-(0.001))){
         if(((Math.abs(long)-Math.abs(-83.06288937320598))>=0 && (Math.abs(long)-Math.abs(-83.06288937320598))<=0.001) || ((Math.abs(long)-Math.abs(-83.06288937320598))<=0 && (Math.abs(long)-Math.abs(-83.06288937320598))>=(-0.001))){
+          window.alert("Scan the AR marker with your camera for more information on the location.");
           window.open("https://ashmi275.github.io/location-based-augumented-reality/turtle.html", "_blank")
         }
       }else{
-        window.alert(`You are not at ${loc} location!`);
+        window.alert(`You are not at ${loc} location! Visit ${loc} and scan our AR marker.`);
       }
       break;
 
@@ -171,10 +178,11 @@ class WindsorTourPlaces extends Component {
 
       if(((Math.abs(lat)-Math.abs(42.30456195766808))>=0 && (Math.abs(lat)-Math.abs(42.30456195766808))<=0.001) || ((Math.abs(lat)-Math.abs(42.30456195766808))<=0 && (Math.abs(lat)-Math.abs(42.30456195766808))>=-(0.001))){
         if(((Math.abs(long)-Math.abs(-83.0640182020208))>=0 && (Math.abs(long)-Math.abs(-83.0640182020208))<=0.001) || ((Math.abs(long)-Math.abs(-83.0640182020208))<=0 && (Math.abs(long)-Math.abs(-83.0640182020208))>=(-0.001))){
+          window.alert("Scan the AR marker with your camera for more information on the location.");
           window.open("https://ashmi275.github.io/location-based-augumented-reality/index.html", "_blank")
         }
       }else{
-        window.alert(`You are not at ${loc} location!`);
+        window.alert(`You are not at ${loc} location! Visit ${loc} and scan our AR marker.`);
       }
       break;
 
@@ -182,15 +190,16 @@ class WindsorTourPlaces extends Component {
 
       if(((Math.abs(lat)-Math.abs(lat))>=0 && (Math.abs(lat)-Math.abs(lat))<=0.001) || ((Math.abs(lat)-Math.abs(lat))<=0 && (Math.abs(lat)-Math.abs(lat))>=-(0.001))){
         if(((Math.abs(long)-Math.abs(long))>=0 && (Math.abs(long)-Math.abs(long))<=0.001) || ((Math.abs(long)-Math.abs(long))<=0 && (Math.abs(long)-Math.abs(long))>=(-0.001))){
-          window.open("https://ashmi275.github.io/location-based-augumented-reality/currentLocation.html", "_blank")
+          window.alert("Scan the AR marker with your camera for more information on the location.");
+          window.open("https://ashmi275.github.io/location-based-augumented-reality/currentLocation.html", "_blank");
         }
       }else{
-        window.alert(`Cannot find your ${loc} !`);
+        window.alert(`Cannot find your ${loc} ! Visit ${loc} and scan our AR marker.`);
       }
       break;
 
     default:
-      window.alert("No data avaliable. Try Again!");
+      window.alert("No AR screen avaliable. Try Again!");
     }
 
 

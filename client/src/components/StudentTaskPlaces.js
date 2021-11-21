@@ -3,51 +3,42 @@ import styled from 'styled-components';
 import SIN from './SIN'
 import GIC from './GICActivation'
 
-const windsorTourLocations = [
-    // {
-    //     id: 101,
-    //     categoryIcon: 'account_balance',
-    //     categoryTitle: 'Residence',
-    //     locations: [
-    //         'Alumni Hall and Conference Centre'
-    //     ]
-    // },
+const newComersTasks = [
     {
-        id: 102,
+        id: 1,
         categoryIcon: 'school',
-        categoryTitle: 'Education',
-        locations: [
-            'SIN',
-            'GIC',
-
-        ]
+        categoryTitle: 'International Students Tasks',
+        tasks: [
+            'Get Social Insurance Number(SIN)',
+            'Activate GIC',
+        ]         
     }
 ]
 
-const PlaceCategory = styled.div`
+const TasksCategory = styled.div`
 width: 100%;
 padding:20px;
 `
-const PlaceCategoryIcon = styled.div`
+const TasksCategoryIcon = styled.div`
 display: inline-block;
 vertical-align: middle;
 `
-const PlaceCategoryTitle = styled.div`
+const TasksCategoryTitle = styled.div`
 display: inline-block;
 margin-left: 30px;
 font-size: 18px;
 font-weight: 700;
 `
-const Locations = styled.div`
+const Tasks = styled.div`
 width: 100%;
 margin: 0 0 4px 70px;
 `
-const LocationIcon = styled.div`
+const TasksIcon = styled.div`
 display: inline-block;
 vertical-align: middle;
 color: #db4437;
 `
-const LocationTitle = styled.div`
+const TasksTitle = styled.div`
 display: inline-block;
 margin-left: 5px;
 font-size: 16px;
@@ -55,45 +46,29 @@ font-weight: 500;
 `
 
 class StudentTaskPlaces extends Component {
-
-
-
     constructor(props) {
         super(props);
         this.state = {
             gic: false,
             sin: false
         };
-        this.handleARScreen = this.handleARScreen.bind(this);
+        this.handleTasksScreen = this.handleTasksScreen.bind(this);
     }
-
-
-
-    handleARScreen(loc) {
-
-
-        debugger;
-        // const {lat, long} = this.props;
-
+    handleTasksScreen(loc) {
         switch (loc) {
-            case 'SIN':
+            case 'Get Social Insurance Number(SIN)':
                 this.setState(
                     { sin: true }
                 )
                 break;
-
-            case 'GIC':
+            case 'Activate GIC':
                 this.setState(
                     { gic: true }
                 )
                 break;
-
-
             default:
-                window.alert("No data avaliable. Try Again!");
+                window.alert("Try Again!");
         }
-
-
     }
 
 
@@ -102,23 +77,23 @@ render() {
 
     return (
       <div >
-          {windsorTourLocations.map(({ locations}) => (
+          {newComersTasks.map(({id, categoryIcon, categoryTitle, tasks}) => (
               <Fragment>
-              {/* <PlaceCategory key={id}>
-                <PlaceCategoryIcon> 
+              <TasksCategory key={id}>
+                <TasksCategoryIcon> 
                 <i className="small material-icons">{categoryIcon}</i>
-                </PlaceCategoryIcon>        
-                <PlaceCategoryTitle>{categoryTitle}</PlaceCategoryTitle>
-            </PlaceCategory> */}
-            {    this.state.sin?<SIN/>:this.state.gic?<GIC/>:locations.map((loc, index) => {
+                </TasksCategoryIcon>        
+                <TasksCategoryTitle>{categoryTitle}</TasksCategoryTitle>
+            </TasksCategory> 
+            {    this.state.sin ? <SIN/> :this.state.gic ? <GIC/> : tasks.map((task, index) => {
                 return (
                     
-                    <Locations key={index} onClick={() => this.handleARScreen(loc)}>
-                        <LocationIcon> 
-                        <i className="small material-icons">location_on</i>
-                        </LocationIcon>  
-                        <LocationTitle>{loc}</LocationTitle>
-                    </Locations>
+                    <Tasks key={index} onClick={() => this.handleTasksScreen(task)}>
+                        <TasksIcon> 
+                        <i className="small material-icons">today</i>
+                        </TasksIcon>  
+                        <TasksTitle>{task}</TasksTitle>
+                    </Tasks>
                           )
             })}
             </Fragment>
@@ -130,48 +105,3 @@ render() {
 
 
 export default StudentTaskPlaces;
-
-
-
-
-// {
-//     locations.map((loc, index) => {
-//         return (
-//             <Locations key={index} onClick={() => this.handleARScreen(loc)}>
-//                 <LocationIcon>
-//                     <i className="small material-icons">location_on</i>
-//                 </LocationIcon>
-//                 <LocationTitle>{loc}</LocationTitle>
-//             </Locations>
-//         )
-//     })
-// }
-
-// render() {
-
-//     return (
-//         <div >
-//             {windsorTourLocations.map(({ locations }) => (
-//                 <Fragment>
-//                     {this.state.sin ? (<SIN />) : {
-//                         locations.map((loc, index) => {
-//                             return (
-//                                 <Locations key={index} onClick={() => this.handleARScreen(loc)}>
-//                                     <LocationIcon>
-//                                         <i className="small material-icons">location_on</i>
-//                                     </LocationIcon>
-//                                     <LocationTitle>{loc}</LocationTitle>
-//                                 </Locations>
-//                             )
-//                         })
-//                     }}
-
-
-
-
-//                 </Fragment>
-//             ))}
-//         </div>
-//     );
-// }
-// }

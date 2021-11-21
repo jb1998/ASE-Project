@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 const Header = styled.div`
-background-color: #0A1A4F;
+background-color: #24349B;
 color: #fff;
 width: 100%;
 height: 56px;
@@ -31,7 +31,7 @@ class StudentTaskHeader extends Component {
           <HeaderBackButton onClick={handleBackButton}>
           <i className="small material-icons">arrow_back</i>
           </HeaderBackButton>           
-          <div>Student Task</div>
+          <div>NewComers Tasks</div>
         </Header>
     );
   }
