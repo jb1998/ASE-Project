@@ -27,7 +27,7 @@ function Navagation() {
                     <div className="App">
                         <div className="main-design">
                             <div className="main-heading">
-                                What brings you to WINSSIST?
+                                What brings you to WINASSIST?
                             </div>
                             <div className="card-here-navigation" onClick={() => exploreWindsor()}>
                                 <div className="left-image">
