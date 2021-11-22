@@ -4,32 +4,14 @@ import StudentTask from './StudentTask';
 import '../App.css';
 
 
-class GICActivation extends Component {
+class SinActivation extends Component {
 
   constructor(props) {
     super(props);
     this.state = {
-      lat: null,
-      long: null,
       backButtonClicked: false
     };   
     this.handleBackButton = this.handleBackButton.bind(this); 
-  }
-
-  componentDidMount() {
-    if (window.navigator.geolocation) {
-        window.navigator.geolocation.getCurrentPosition( async (position) => {
-            
-            this.setState({ 
-              lat: position.coords.latitude,
-              long: position.coords.longitude
-            });
-        }, (e) => {
-            console.log(e);
-        });
-    } else {
-        console.log("Navigator not supported");
-    }
   }
 
   handleBackButton(){
@@ -40,7 +22,7 @@ class GICActivation extends Component {
   
 
   render() {
-    const {lat, long, backButtonClicked} = this.state;
+    const {backButtonClicked} = this.state;
     return (
       <Fragment>
         {backButtonClicked ? <StudentTask /> :
@@ -48,20 +30,15 @@ class GICActivation extends Component {
         <SINHeader handleBackButton={this.handleBackButton}/>
         <div className="gictext">
         <ol>
-        <li>Walk in to the nearest service Ontario centre.</li>
+        <li>Walk in to the nearest service Ontario centre.</li> 
         <li>Carry the following documents for the getting SIN number</li>
         <ol type="a">
             <li>Passport</li>
             <li>Study permit</li>
         </ol>
         <li>Provide family and residential details.</li>
-
-</ol>
-            
-  
-        </div>
-       
-       
+        </ol>  
+        </div>       
       </div>  
         }
       </Fragment>   
@@ -69,4 +46,4 @@ class GICActivation extends Component {
   }
 }
 
-export default GICActivation;
+export default SinActivation;

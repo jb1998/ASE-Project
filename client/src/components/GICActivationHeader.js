@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 const Header = styled.div`
-background-color: #0A1A4F;
+background-color: #24349b;
 color: #fff;
 width: 100%;
 height: 56px;

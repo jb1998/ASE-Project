@@ -1,7 +1,5 @@
 import React, { Component, Fragment } from 'react';
 import styled from 'styled-components';
-import SIN from './SIN'
-import GIC from './GICActivation'
 
 const newComersTasks = [
     {
@@ -74,30 +72,29 @@ class StudentTaskPlaces extends Component {
 
   
 render() {
-
     return (
       <div >
-          {newComersTasks.map(({id, categoryIcon, categoryTitle, tasks}) => (
-              <Fragment>
-              <TasksCategory key={id}>
+        {newComersTasks.map(({id, categoryIcon, categoryTitle, tasks}) => (
+            <Fragment>
+            <TasksCategory key={id}>
                 <TasksCategoryIcon> 
                 <i className="small material-icons">{categoryIcon}</i>
                 </TasksCategoryIcon>        
                 <TasksCategoryTitle>{categoryTitle}</TasksCategoryTitle>
             </TasksCategory> 
-            {    this.state.sin ? <SIN/> :this.state.gic ? <GIC/> : tasks.map((task, index) => {
-                return (
-                    
-                    <Tasks key={index} onClick={() => this.handleTasksScreen(task)}>
+            { tasks.map((task, index) => {
+                return (                    
+                    <Tasks key={index} onClick={() => this.props.handleTasksBackButton(task)}>
                         <TasksIcon> 
                         <i className="small material-icons">today</i>
                         </TasksIcon>  
                         <TasksTitle>{task}</TasksTitle>
                     </Tasks>
-                          )
+                        )
             })}
             </Fragment>
-          ))}
+            ))
+          }
       </div>
     );
   }
