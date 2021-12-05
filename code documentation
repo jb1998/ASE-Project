@@ -1,0 +1,324 @@
+{
+ "config": {
+   "title": "Client",
+   "description": "My awesome app using docz",
+   "menu": [],
+   "version": "0.1.0",
+   "repository": null,
+   "native": false,
+   "themeConfig": {},
+   "separator": "-"
+ },
+ "entries": [
+   {
+     "key": "README.md",
+     "value": {
+       "id": "04c6e90faac2675aa89e2176d2eec7d8",
+       "filepath": "README.md",
+       "fullpath": "/Users/jatinbindra/Desktop/projects_dev/ASE-Project/client/README.md",
+       "link": "",
+       "hidden": false,
+       "slug": "readme",
+       "route": "/readme",
+       "name": "Readme",
+       "menu": "",
+       "headings": [
+         {
+           "slug": "getting-started-with-create-react-app",
+           "depth": 1,
+           "value": "Getting Started with Create React App"
+         },
+         {
+           "slug": "available-scripts",
+           "depth": 2,
+           "value": "Available Scripts"
+         },
+         {
+           "slug": "npm-start",
+           "depth": 3,
+           "value": "npm start"
+         },
+         {
+           "slug": "npm-test",
+           "depth": 3,
+           "value": "npm test"
+         },
+         {
+           "slug": "npm-run-build",
+           "depth": 3,
+           "value": "npm run build"
+         },
+         {
+           "slug": "npm-run-eject",
+           "depth": 3,
+           "value": "npm run eject"
+         },
+         {
+           "slug": "learn-more",
+           "depth": 2,
+           "value": "Learn More"
+         },
+         {
+           "slug": "code-splitting",
+           "depth": 3,
+           "value": "Code Splitting"
+         },
+         {
+           "slug": "analyzing-the-bundle-size",
+           "depth": 3,
+           "value": "Analyzing the Bundle Size"
+         },
+         {
+           "slug": "making-a-progressive-web-app",
+           "depth": 3,
+           "value": "Making a Progressive Web App"
+         },
+         {
+           "slug": "advanced-configuration",
+           "depth": 3,
+           "value": "Advanced Configuration"
+         },
+         {
+           "slug": "deployment",
+           "depth": 3,
+           "value": "Deployment"
+         },
+         {
+           "slug": "npm-run-build-fails-to-minify",
+           "depth": 3,
+           "value": "npm run build  fails to minify"
+         }
+       ]
+     }
+   }
+ ],
+ "props": [
+   {
+     "key": "src/App.js",
+     "value": [
+       {
+         "description": "",
+         "displayName": "App",
+         "methods": [],
+         "actualName": "App"
+       }
+     ]
+   },
+   {
+     "key": "src/components/AR.js",
+     "value": [
+       {
+         "description": "",
+         "displayName": "AR",
+         "methods": [],
+         "actualName": "AR"
+       }
+     ]
+   },
+   {
+     "key": "src/components/GICActivation.js",
+     "value": [
+       {
+         "description": "",
+         "displayName": "GICActivation",
+         "methods": [
+           {
+             "name": "handleBackButton",
+             "docblock": null,
+             "modifiers": [],
+             "params": [],
+             "returns": null
+           }
+         ],
+         "actualName": "GICActivation"
+       }
+     ]
+   },
+   {
+     "key": "src/components/GICActivationHeader.js",
+     "value": [
+       {
+         "description": "",
+         "displayName": "GICActivationHeader",
+         "methods": [],
+         "actualName": "GICActivationHeader"
+       }
+     ]
+   },
+   {
+     "key": "src/components/Landing.js",
+     "value": [
+       {
+         "description": "",
+         "displayName": "Landing",
+         "methods": [],
+         "actualName": "Landing"
+       }
+     ]
+   },
+   {
+     "key": "src/components/Navagation.js",
+     "value": [
+       {
+         "description": "@doxdocgen\nGenerate Doxygen\nComments in VSCode",
+         "displayName": "Navagation",
+         "methods": [],
+         "actualName": "Navagation"
+       }
+     ]
+   },
+   {
+     "key": "src/components/SIN.js",
+     "value": [
+       {
+         "description": "",
+         "displayName": "SinActivation",
+         "methods": [
+           {
+             "name": "handleBackButton",
+             "docblock": null,
+             "modifiers": [],
+             "params": [],
+             "returns": null
+           }
+         ],
+         "actualName": "SinActivation"
+       }
+     ]
+   },
+   {
+     "key": "src/components/SINheader.js",
+     "value": [
+       {
+         "description": "",
+         "displayName": "GICActivationHeader",
+         "methods": [],
+         "actualName": "GICActivationHeader"
+       }
+     ]
+   },
+   {
+     "key": "src/components/StudentTask.js",
+     "value": [
+       {
+         "description": "",
+         "displayName": "StudentTask",
+         "methods": [
+           {
+             "name": "handleBackButton",
+             "docblock": null,
+             "modifiers": [],
+             "params": [],
+             "returns": null
+           },
+           {
+             "name": "handleTasksBackButton",
+             "docblock": null,
+             "modifiers": [],
+             "params": [
+               {
+                 "name": "task",
+                 "optional": false,
+                 "type": null
+               }
+             ],
+             "returns": null
+           }
+         ],
+         "actualName": "StudentTask"
+       }
+     ]
+   },
+   {
+     "key": "src/components/StudentTaskHeader.js",
+     "value": [
+       {
+         "description": "",
+         "displayName": "StudentTaskHeader",
+         "methods": [],
+         "actualName": "StudentTaskHeader"
+       }
+     ]
+   },
+   {
+     "key": "src/components/StudentTaskPlaces.js",
+     "value": [
+       {
+         "description": "",
+         "displayName": "StudentTaskPlaces",
+         "methods": [
+           {
+             "name": "handleTasksScreen",
+             "docblock": null,
+             "modifiers": [],
+             "params": [
+               {
+                 "name": "loc",
+                 "optional": false,
+                 "type": null
+               }
+             ],
+             "returns": null
+           }
+         ],
+         "actualName": "StudentTaskPlaces"
+       }
+     ]
+   },
+   {
+     "key": "src/components/WindsorTour.js",
+     "value": [
+       {
+         "description": "",
+         "displayName": "WindsorTour",
+         "methods": [
+           {
+             "name": "handleBackButton",
+             "docblock": null,
+             "modifiers": [],
+             "params": [],
+             "returns": null
+           }
+         ],
+         "actualName": "WindsorTour"
+       }
+     ]
+   },
+   {
+     "key": "src/components/WindsorTourHeader.js",
+     "value": [
+       {
+         "description": "",
+         "displayName": "WindsorTourHeader",
+         "methods": [],
+         "actualName": "WindsorTourHeader"
+       }
+     ]
+   },
+   {
+     "key": "src/components/WindsorTourPlaces.js",
+     "value": [
+       {
+         "description": "",
+         "displayName": "WindsorTourPlaces",
+         "methods": [
+           {
+             "name": "handleARScreen",
+             "docblock": null,
+             "modifiers": [],
+             "params": [
+               {
+                 "name": "loc",
+                 "optional": false,
+                 "type": null
+               }
+             ],
+             "returns": null
+           }
+         ],
+         "actualName": "WindsorTourPlaces"
+       }
+     ]
+   }
+ ]
+}
