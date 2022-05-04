@@ -10,6 +10,7 @@ WinAssist is a mobile application intended for new immigrants to allow them acce
 - A tour of the University of Windsor which will take them to all the hotspots at university and learn various fun facts while on tour.
 - Helping students find nearest Service Canada and Banks as per their current location for applying their SIN and for GIC activation.
 - Find the nearest grocery and pharmacy within your area.
+- Near real time application created with React JS and deployed with netlify.
 
   
 ## Authors
